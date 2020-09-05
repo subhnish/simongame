@@ -8,12 +8,13 @@ let num;
 function gameOver() {
     numArr = [];
     userArr = [];
-    level = 0
+    
     document.body.style.background = "red";
     setTimeout(() => {
       document.body.style.background = "#202020";
     }, 500);
-    document.querySelector(".header").innerText = "Game over, Let's Play Again";
+    document.querySelector(".header").innerText = `Game over, Score = ${level}`;
+    level = 0
   }
 
   //flash
