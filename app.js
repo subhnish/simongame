@@ -20,7 +20,7 @@ function gameOver() {
 
 function flash(tileNum) {
 let = tileNumber = `.tile${tileNum}`
-console.log(tileNumber)
+// console.log(tileNumber)
 setTimeout(() => {
 document.querySelector(tileNumber).classList.add("flash")
 }, 300);
@@ -78,13 +78,13 @@ document.addEventListener("keydown", () => {
 function check(a, b) {
   counter = 0;
  for(let i = 0; i <= a.length - 1; i++) {
-  console.log(a)
-   console.log("a" + a[i])
-   console.log(b)
-   console.log("b" + b[i])
+//   console.log(a)
+//    console.log("a" + a[i])
+//    console.log(b)
+//    console.log("b" + b[i])
 if(a[i] == b[i]) {
   counter++
-  console.log("counter " + counter)
+//   console.log("counter " + counter)
 }
  }
 if (counter == a.length) return true
