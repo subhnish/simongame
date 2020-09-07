@@ -41,10 +41,11 @@ clickTile = `.tile${tileNum}`
 
 //Generate the Number
 function genNum() {
-  if (numArr.length > 0) {}
+  if (numArr.length > 0) {
   let num = Math.ceil(Math.random() * 4);
   numArr.push(num);
   flash(num);
+  }
 };
 
 //User Play Function
