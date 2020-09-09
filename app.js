@@ -45,7 +45,9 @@ function genNum() {
   let num = Math.ceil(Math.random() * 4);
   numArr.push(num);
   flash(num);
-  }
+  } else {
+
+}
 };
 
 //User Play Function
@@ -56,7 +58,6 @@ for (x of tiles) {
     tileNumber = e.target.getAttribute("class").split(" ")[2]
     click(parseInt(tileNumber))
     userArr.push(parseInt(tileNumber));
-    }
     if (check(userArr, numArr) == false) {
       gameOver()
     } else if (check(userArr, numArr) && userArr.length == numArr.length) {
@@ -65,6 +66,7 @@ for (x of tiles) {
          document.querySelector(".header").innerText = `Level ${level}`
          genNum();
     }
+  }
   })
 }
 
