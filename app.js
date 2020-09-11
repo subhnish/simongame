@@ -79,6 +79,14 @@ document.addEventListener("keydown", () => {
     }
   });
 
+  document.addEventListener("touchend", () => {
+    if (numArr.length == 0) {
+        num = Math.ceil(Math.random() * 4);
+        numArr.push(num);
+        flash(num);
+    }
+  });
+
 function check(a, b) {
   counter = 0;
  for(let i = 0; i <= a.length - 1; i++) {
